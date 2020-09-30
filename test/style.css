@@ -1,0 +1,84 @@
+body{
+    background-color: blue;
+    overflow-y: hidden;
+}
+
+#test{
+    display: flex;
+}
+
+#test img{
+position: absolute;
+    margin-left: 30%;
+animation: chute 4s infinite;
+animation-timing-function: linear;
+
+}
+#test2 img{
+    position: absolute;
+    margin-left: 10%;
+animation: chute3 3s infinite;
+animation-timing-function: linear;
+
+}
+#test3 img{
+    position: absolute;
+    margin-left: 60%;
+animation: chute2 2s infinite;
+animation-timing-function: linear;
+
+
+}
+#test4 img{
+    position: absolute;
+    margin-left: 80%;
+animation: chute 3s infinite;
+animation-timing-function: linear;
+transform: scaleX(-1);
+
+}
+
+@keyframes chute{
+    from {
+        margin-top: -20px;
+
+    }
+
+    to {
+        margin-top: 1000px; 
+    }
+}
+
+@keyframes chute2{
+    from {
+        margin-top: -20px;
+        transform: rotate(0deg);
+    }
+
+    to{
+        margin-top: 1000px; 
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes chute3{
+    0% {
+        margin-top: -140px;
+        transform: rotate(360deg);
+        height: 200px;
+        width: 150px;
+    }
+
+    50% {
+        margin-top: 1000px; 
+        transform: rotate(0deg);
+        height: 150;
+        width: 115;
+    }
+    100% {
+        margin-top: -140px;
+        transform: rotate(360deg);
+        height: 200px;
+        width: 150px;
+    }
+}
